@@ -36,7 +36,7 @@ app.get("/weather", (req, res) => {
     });
   });
 });
-app.get("/weather2", (req, res) => {
+app.get("/", (req, res) => {
   res.render("weather2", {
     name: "weather2",
     l: "patel",
