@@ -10,7 +10,7 @@ const pathfilehhh = path.join(__dirname, "../public");
 const viewspath = path.join(__dirname, "../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partial");
 hbs.registerPartials(partialsPath);
-
+const port = process.env.PORT || 3000;
 app.set("views", viewspath);
 app.use(express.static(pathfilehhh));
 app.get("/app", (req, res) => {
@@ -67,6 +67,6 @@ app.get("/about", (req, res) => {
 app.get("*", (req, res) => {
   res.send("404 page not foundby sandeep");
 });
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("heynvohj");
 });
