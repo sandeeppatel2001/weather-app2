@@ -14,12 +14,12 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        response.body.current +
-          " It is currently " +
+        [response.body.current +
+          " It is currently " ,
           response.body.current.temperature +
-          " degress out. There is a " +
+          " degress out. There is a " ,
           response.body.current.feelslike +
-          "% chance of rain."
+          "% chance of rain."]
       );
     }
   });

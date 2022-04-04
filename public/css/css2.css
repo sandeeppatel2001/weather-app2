@@ -34,3 +34,9 @@ button {
   border-radius: 25px;
   background-color: #eeee;
 }
+@media screen and(min-width:750px) {
+  body {
+    width: 10%;
+    font-size: 10%;
+  }
+}
