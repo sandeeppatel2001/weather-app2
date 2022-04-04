@@ -5,9 +5,9 @@ const twop = document.querySelector(".twop");
 const threep = document.querySelector(".threep");
 const fourp = document.querySelector(".fourp");
 const fivep = document.querySelector(".fivep");
-submit.addEventListener("chalk", (e) => {
+submit.addEventListener("click", (e) => {
   e.preventDefault();
-  onep.textContent = "Loading......";
+  // onep.textContent = "Loading......";
   fetch("/weather?address=" + inpute.value).then((response) => {
     response.json().then((data) => {
       if (data.error) {
